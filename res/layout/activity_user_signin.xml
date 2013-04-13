@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/historyback"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:layout_gravity="center_vertical|center_horizontal" >
+
+              <Button
+                  android:id="@+id/goBack"
+                  android:layout_width="46dp"
+                  android:layout_height="32dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="0dp"
+                  android:background="@drawable/goback" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical|center_horizontal"
+                  android:layout_marginLeft="50dp"
+                  android:layout_marginTop="0dp"
+                  android:text="H-Walker"
+                  android:textColor="#ffffff"
+                  android:textSize="30sp" />
+
+          </LinearLayout>
+  </LinearLayout>  
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="25dp"
+      android:layout_marginTop="80dp"
+      android:gravity="center_vertical"
+      android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email*"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                 <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password*"
+                    android:textSize="15sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" >
+
+                      <EditText
+                          android:id="@+id/et_password"
+                          android:layout_width="148dp"
+                          android:layout_height="wrap_content"
+                          android:ems="10"
+                          android:inputType="textPassword" >
+
+                          <requestFocus />
+                      </EditText>
+
+                      <Button
+                          android:id="@+id/btn_signIn"
+                          android:layout_width="75dp"
+                          android:layout_height="50dp"
+                          android:layout_marginLeft="30dp"
+                          android:background="@drawable/buttonback2"
+                          android:onClick="signIn"
+                          android:text="SIGN IN"
+                          android:textColor="#ffffff" />
+                  </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.05"
+                    android:text="Join us?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="0.26"
+                    android:background="@drawable/buttonback2"
+                    android:onClick="signUp"
+                    android:text="SIGN    UP"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

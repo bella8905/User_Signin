@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/historyback"
+    android:orientation = "vertical" >
+
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_vertical|center_horizontal" >
+
+              <Button
+                  android:id="@+id/goBack"
+                  android:layout_width="47dp"
+                  android:layout_height="30dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="5dp"
+                  android:onClick = "goBack"
+                  android:background="@drawable/goback" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical|center_horizontal"
+                  android:layout_marginLeft="50dp"
+                  android:text="History"
+                  android:textColor="#ffffff"
+                  android:textSize="30sp" />
+
+          </LinearLayout>
+
+	    </LinearLayout>
+	    
+      <ListView
+          android:id="@+id/historyList"
+          android:layout_width="fill_parent"
+          android:layout_height="703dp"
+          android:layout_marginTop="5dp"
+          android:divider="@null"
+          android:focusable="false" >
+
+    </ListView>
+    
+
+    </LinearLayout>
+    
+  
